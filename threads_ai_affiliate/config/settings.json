@@ -1,0 +1,32 @@
+{
+  "api": {
+    "anthropic_api_key": "${ANTHROPIC_API_KEY}",
+    "threads_access_token": "${THREADS_ACCESS_TOKEN}",
+    "threads_user_id": "${THREADS_USER_ID}"
+  },
+  "agent_settings": {
+    "model": "claude-opus-4-6",
+    "max_tokens": 2048,
+    "temperature": 0.8
+  },
+  "posting": {
+    "min_interval_hours": 2.0,
+    "max_per_day": 5,
+    "time_slots": ["07:00", "10:00", "13:00", "17:00", "21:00"],
+    "quality_threshold": 7.0,
+    "similarity_threshold": 0.85,
+    "history_check_count": 100,
+    "recent_pattern_avoid": 3
+  },
+  "safety": {
+    "kill_switch": false,
+    "max_consecutive_errors": 3,
+    "dry_run": false
+  },
+  "paths": {
+    "knowledge_dir": "knowledge/",
+    "data_dir": "data/",
+    "logs_dir": "logs/",
+    "agents_dir": "agents/"
+  }
+}
